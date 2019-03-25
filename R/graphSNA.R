@@ -16,7 +16,7 @@
 #' @param indegree the column containing the "indegree" parameters, will be plotted as the x -coordinate.
 #' @param outdegree the column containing the "outdegree" parameters, will be plotted as the x -coordinate.
 #' @param betweeness the column containing the "betweeness" parameters, will define the size of the dots.
-#' @param NOM  the column containing the names of the localities.
+#' @param NAME  the column containing the names of the localities.
 #' @keywords plot ggplot sna network
 graphSNA <- function(x, indegree, outdegree, betweeness, NAME){
   x <- x[x$degree != 0,]
