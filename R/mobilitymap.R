@@ -11,6 +11,7 @@
 #' @param NAME  the column containing the names of the localities.
 #' @keywords plot ggplot sna network
 #' @usage mobilitymap(x,y)
+#'
 mobilitymap <- function(x, y = 0.8){
     z = y
   if(y != 0.8 & y %in% names(x))
