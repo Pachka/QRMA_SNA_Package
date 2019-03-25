@@ -4,7 +4,7 @@
 #'
 #' Cette fonction sert a produire une carte de mobilite.
 #'
-#' @import rworldmap graphics
+#' @import rworldmap graphics arulesViz
 #' @export mobilitymap
 #' @param x the data.frame containing the degree (mobility parameter) and the GPS coordiantes (column names: LONGITUDE_X and LATITUDE_Y) \cr
 #' le data.frame contenant le degre (parametre de mobilite) et les coodonnees GPS (nom des colonnes : LONGITUDE_X et LATITUDE_Y)
