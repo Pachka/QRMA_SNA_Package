@@ -12,7 +12,7 @@
 #' @keywords plot ggplot sna network
 #' @usage mobilitymap(x,y)
 #'
-mobilitymap <- function(x, y = 0.8) {
+mobilitymap <- function(x, y) {
     z = y
   if(y != 0.8 & y %in% names(x))
     z <- (x[,y]*2)/max(x[,y])
