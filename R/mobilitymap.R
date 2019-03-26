@@ -13,9 +13,14 @@
 #' @usage mobilitymap(x,y)
 #'
 mobilitymap <- function(x, y = 0.8) {
-    z = y
+  z = y
   if(y != 0.8 & y %in% names(x))
     z <- (x[,y]*2)/max(x[,y])
   x <- x[x$degree != 0,]
-  getMap(resolution = "low")
+  newmap <- getMap(resolution = "low")
+  plot(newmap,
+       xlim = c(min(x$LONGITUDE_X) - 1, max(x$LONGITUDE_X) + 1),
+       ylim = c(min(x$LATITUDE_Y) - 1, max(x$LATITUDE_Y) + 1),
+       asp = 1)
+  points(x$LONGITUDE_X, x$LATITUDE_Y, bg="darkgreen", pch=19, cex = z)
 }
